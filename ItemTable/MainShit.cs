@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+﻿using Microsoft.VisualBasic;
+using System;
+using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.VisualBasic;
-using System.IO;
 
 namespace KH2Suite_ItemTable
 {
@@ -39,8 +34,24 @@ namespace KH2Suite_ItemTable
 
                     if (Topaz3 == DialogResult.Yes)
                     {
-                        int ToRefer = BitConverter.ToInt32(File.ReadAllBytes(OpenFilez.FileName).Skip(0x68).Take(4).ToArray(), 0);
-                        int ToTake = BitConverter.ToInt32(File.ReadAllBytes(OpenFilez.FileName).Skip(0x6C).Take(4).ToArray(), 0);
+                        int ToReferOffset = 0x68;
+                        int ToTakeOffset = 0x6C;
+
+                        //We have to figure out if this is a PS2 file or a PS4 file
+                        var IsPS2File = Encoding.UTF8.GetString(File.ReadAllBytes(OpenFilez.FileName).Take(4).ToArray()).Replace("\u0001", string.Empty) == "BAR" ? true : false;
+
+                        if (!IsPS2File)
+                        {
+                            var IsPS4File = Encoding.UTF8.GetString(File.ReadAllBytes(OpenFilez.FileName).Skip(16).Take(4).ToArray()).Replace("\u0001", string.Empty) == "BAR" ? true : false;
+                            if (IsPS4File)
+                            {
+                                ToReferOffset += 32;
+                                ToTakeOffset += 16;
+                            }
+                        }
+
+                        int ToRefer = BitConverter.ToInt32(File.ReadAllBytes(OpenFilez.FileName).Skip(ToReferOffset).Take(4).ToArray(), 0);
+                        int ToTake = BitConverter.ToInt32(File.ReadAllBytes(OpenFilez.FileName).Skip(ToTakeOffset).Take(4).ToArray(), 0);
                         byte[] GetFile = File.ReadAllBytes(OpenFilez.FileName).Skip(ToRefer).Take(ToTake).ToArray();
 
                         File.WriteAllBytes(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "/ItemTableExtract" + ".bin", GetFile);
