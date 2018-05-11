@@ -34,7 +34,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.TXT_GemProps = new System.Windows.Forms.Label();
             this.BTxt_GemType = new System.Windows.Forms.TextBox();
@@ -114,7 +113,6 @@
             this.GB_Item.Controls.Add(this.label16);
             this.GB_Item.Controls.Add(this.label15);
             this.GB_Item.Controls.Add(this.label14);
-            this.GB_Item.Controls.Add(this.label13);
             this.GB_Item.Controls.Add(this.label12);
             this.GB_Item.Controls.Add(this.TXT_GemProps);
             this.GB_Item.Controls.Add(this.BTxt_GemType);
@@ -142,7 +140,7 @@
             this.GB_Item.Controls.Add(this.TXT_ItemID);
             this.GB_Item.Location = new System.Drawing.Point(7, 3);
             this.GB_Item.Name = "GB_Item";
-            this.GB_Item.Size = new System.Drawing.Size(274, 415);
+            this.GB_Item.Size = new System.Drawing.Size(303, 415);
             this.GB_Item.TabIndex = 0;
             this.GB_Item.TabStop = false;
             this.GB_Item.Text = "Contents of the Item Table:";
@@ -187,7 +185,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(126, 389);
+            this.label16.Location = new System.Drawing.Point(142, 389);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(139, 13);
             this.label16.TabIndex = 28;
@@ -196,7 +194,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(126, 344);
+            this.label15.Location = new System.Drawing.Point(142, 344);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(142, 26);
             this.label15.TabIndex = 27;
@@ -206,25 +204,17 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(136, 194);
+            this.label14.Location = new System.Drawing.Point(128, 201);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(109, 13);
+            this.label14.Size = new System.Drawing.Size(169, 26);
             this.label14.TabIndex = 26;
-            this.label14.Text = "Refer: msg/jp/sys.bar";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(136, 233);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(109, 13);
-            this.label13.TabIndex = 25;
-            this.label13.Text = "Refer: msg/jp/sys.bar";
+            this.label14.Text = "Refer: msg/jp/sys.bar\r\nOccupied Range: 0x1BA - 0x5476\r\n";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(127, 272);
+            this.label12.Location = new System.Drawing.Point(142, 269);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(137, 13);
             this.label12.TabIndex = 0;
@@ -234,7 +224,7 @@
             // 
             this.TXT_GemProps.AutoSize = true;
             this.TXT_GemProps.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TXT_GemProps.Location = new System.Drawing.Point(220, 55);
+            this.TXT_GemProps.Location = new System.Drawing.Point(247, 55);
             this.TXT_GemProps.Name = "TXT_GemProps";
             this.TXT_GemProps.Size = new System.Drawing.Size(46, 39);
             this.TXT_GemProps.TabIndex = 24;
@@ -243,14 +233,14 @@
             // 
             // BTxt_GemType
             // 
-            this.BTxt_GemType.Location = new System.Drawing.Point(218, 127);
+            this.BTxt_GemType.Location = new System.Drawing.Point(245, 127);
             this.BTxt_GemType.Name = "BTxt_GemType";
             this.BTxt_GemType.Size = new System.Drawing.Size(49, 20);
             this.BTxt_GemType.TabIndex = 23;
             // 
             // BTxt_GemClass
             // 
-            this.BTxt_GemClass.Location = new System.Drawing.Point(218, 100);
+            this.BTxt_GemClass.Location = new System.Drawing.Point(245, 100);
             this.BTxt_GemClass.Name = "BTxt_GemClass";
             this.BTxt_GemClass.Size = new System.Drawing.Size(49, 20);
             this.BTxt_GemClass.TabIndex = 22;
@@ -261,7 +251,7 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(124, 103);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(94, 41);
+            this.pictureBox1.Size = new System.Drawing.Size(115, 41);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -461,9 +451,9 @@
             this.GB_Prop.Controls.Add(this.BTxt_PropID);
             this.GB_Prop.Controls.Add(this.label9);
             this.GB_Prop.Controls.Add(this.label10);
-            this.GB_Prop.Location = new System.Drawing.Point(287, 3);
+            this.GB_Prop.Location = new System.Drawing.Point(316, 3);
             this.GB_Prop.Name = "GB_Prop";
-            this.GB_Prop.Size = new System.Drawing.Size(267, 415);
+            this.GB_Prop.Size = new System.Drawing.Size(263, 415);
             this.GB_Prop.TabIndex = 1;
             this.GB_Prop.TabStop = false;
             this.GB_Prop.Text = "Contents of the Property Table:";
@@ -681,9 +671,9 @@
             this.GB_IO.Controls.Add(this.label19);
             this.GB_IO.Controls.Add(this.EntryPropCB);
             this.GB_IO.Controls.Add(this.EntryItemCB);
-            this.GB_IO.Location = new System.Drawing.Point(560, 3);
+            this.GB_IO.Location = new System.Drawing.Point(585, 3);
             this.GB_IO.Name = "GB_IO";
-            this.GB_IO.Size = new System.Drawing.Size(136, 415);
+            this.GB_IO.Size = new System.Drawing.Size(157, 415);
             this.GB_IO.TabIndex = 2;
             this.GB_IO.TabStop = false;
             this.GB_IO.Text = "General I/O:";
@@ -703,15 +693,15 @@
             this.label21.AutoSize = true;
             this.label21.Location = new System.Drawing.Point(7, 173);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(103, 13);
+            this.label21.Size = new System.Drawing.Size(120, 13);
             this.label21.TabIndex = 53;
-            this.label21.Text = "Prop Entry Capacity:";
+            this.label21.Text = "Property Entry Capacity:";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Butt_DecProp
             // 
             this.Butt_DecProp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Butt_DecProp.Location = new System.Drawing.Point(111, 118);
+            this.Butt_DecProp.Location = new System.Drawing.Point(134, 117);
             this.Butt_DecProp.Name = "Butt_DecProp";
             this.Butt_DecProp.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Butt_DecProp.Size = new System.Drawing.Size(17, 25);
@@ -723,7 +713,7 @@
             // Butt_IncProp
             // 
             this.Butt_IncProp.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Butt_IncProp.Location = new System.Drawing.Point(93, 118);
+            this.Butt_IncProp.Location = new System.Drawing.Point(116, 117);
             this.Butt_IncProp.Name = "Butt_IncProp";
             this.Butt_IncProp.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Butt_IncProp.Size = new System.Drawing.Size(17, 25);
@@ -735,7 +725,7 @@
             // Butt_DecItem
             // 
             this.Butt_DecItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Butt_DecItem.Location = new System.Drawing.Point(111, 13);
+            this.Butt_DecItem.Location = new System.Drawing.Point(134, 12);
             this.Butt_DecItem.Name = "Butt_DecItem";
             this.Butt_DecItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Butt_DecItem.Size = new System.Drawing.Size(17, 25);
@@ -747,7 +737,7 @@
             // Butt_IncItem
             // 
             this.Butt_IncItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Butt_IncItem.Location = new System.Drawing.Point(93, 13);
+            this.Butt_IncItem.Location = new System.Drawing.Point(116, 12);
             this.Butt_IncItem.Name = "Butt_IncItem";
             this.Butt_IncItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Butt_IncItem.Size = new System.Drawing.Size(17, 25);
@@ -762,7 +752,7 @@
             this.PBar_PropCap.Maximum = 2048;
             this.PBar_PropCap.Minimum = 1;
             this.PBar_PropCap.Name = "PBar_PropCap";
-            this.PBar_PropCap.Size = new System.Drawing.Size(121, 23);
+            this.PBar_PropCap.Size = new System.Drawing.Size(145, 23);
             this.PBar_PropCap.TabIndex = 48;
             this.PBar_PropCap.Value = 1;
             // 
@@ -772,7 +762,7 @@
             this.PBar_ItemCap.Maximum = 2048;
             this.PBar_ItemCap.Minimum = 1;
             this.PBar_ItemCap.Name = "PBar_ItemCap";
-            this.PBar_ItemCap.Size = new System.Drawing.Size(121, 23);
+            this.PBar_ItemCap.Size = new System.Drawing.Size(144, 23);
             this.PBar_ItemCap.TabIndex = 47;
             this.PBar_ItemCap.Value = 1;
             // 
@@ -791,9 +781,9 @@
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(7, 123);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(59, 13);
+            this.label19.Size = new System.Drawing.Size(76, 13);
             this.label19.TabIndex = 44;
-            this.label19.Text = "Prop Entry:";
+            this.label19.Text = "Property Entry:";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // EntryPropCB
@@ -801,7 +791,7 @@
             this.EntryPropCB.FormattingEnabled = true;
             this.EntryPropCB.Location = new System.Drawing.Point(7, 144);
             this.EntryPropCB.Name = "EntryPropCB";
-            this.EntryPropCB.Size = new System.Drawing.Size(121, 21);
+            this.EntryPropCB.Size = new System.Drawing.Size(144, 21);
             this.EntryPropCB.TabIndex = 1;
             this.EntryPropCB.SelectedIndexChanged += new System.EventHandler(this.EntryPropCB_SelectedIndexChanged);
             // 
@@ -810,13 +800,13 @@
             this.EntryItemCB.FormattingEnabled = true;
             this.EntryItemCB.Location = new System.Drawing.Point(7, 39);
             this.EntryItemCB.Name = "EntryItemCB";
-            this.EntryItemCB.Size = new System.Drawing.Size(121, 21);
+            this.EntryItemCB.Size = new System.Drawing.Size(144, 21);
             this.EntryItemCB.TabIndex = 0;
             this.EntryItemCB.SelectedIndexChanged += new System.EventHandler(this.EntryItemCB_SelectedIndexChanged);
             // 
             // OpenShit
             // 
-            this.OpenShit.Location = new System.Drawing.Point(9, 13);
+            this.OpenShit.Location = new System.Drawing.Point(19, 13);
             this.OpenShit.Name = "OpenShit";
             this.OpenShit.Size = new System.Drawing.Size(118, 23);
             this.OpenShit.TabIndex = 46;
@@ -826,7 +816,7 @@
             // 
             // Butt_InjectShit
             // 
-            this.Butt_InjectShit.Location = new System.Drawing.Point(9, 71);
+            this.Butt_InjectShit.Location = new System.Drawing.Point(19, 71);
             this.Butt_InjectShit.Name = "Butt_InjectShit";
             this.Butt_InjectShit.Size = new System.Drawing.Size(118, 23);
             this.Butt_InjectShit.TabIndex = 53;
@@ -836,7 +826,7 @@
             // 
             // Butt_SwapEnd
             // 
-            this.Butt_SwapEnd.Location = new System.Drawing.Point(9, 42);
+            this.Butt_SwapEnd.Location = new System.Drawing.Point(19, 42);
             this.Butt_SwapEnd.Name = "Butt_SwapEnd";
             this.Butt_SwapEnd.Size = new System.Drawing.Size(118, 23);
             this.Butt_SwapEnd.TabIndex = 54;
@@ -849,9 +839,9 @@
             this.groupBox1.Controls.Add(this.Butt_SwapEnd);
             this.groupBox1.Controls.Add(this.Butt_InjectShit);
             this.groupBox1.Controls.Add(this.OpenShit);
-            this.groupBox1.Location = new System.Drawing.Point(560, 318);
+            this.groupBox1.Location = new System.Drawing.Point(585, 318);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(136, 100);
+            this.groupBox1.Size = new System.Drawing.Size(152, 100);
             this.groupBox1.TabIndex = 55;
             this.groupBox1.TabStop = false;
             // 
@@ -859,7 +849,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(704, 423);
+            this.ClientSize = new System.Drawing.Size(749, 423);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.GB_IO);
             this.Controls.Add(this.GB_Prop);
@@ -867,7 +857,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainShit";
-            this.Text = "Kingdom Hearts 2 Suite: Item Table Editor [v1 - Topaz M. Quartz]";
+            this.Text = "Kingdom Hearts 2 Suite: Item Table Editor [v1.2 - Topaz M. Quartz]";
             this.GB_Item.ResumeLayout(false);
             this.GB_Item.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -914,7 +904,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label TXT_IconID;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
