@@ -35,6 +35,7 @@
             this.LoadedFileLabel = new System.Windows.Forms.Label();
             this.MapScaleTracker = new System.Windows.Forms.TrackBar();
             this.label1 = new System.Windows.Forms.Label();
+            this.LoadedFileLinkLabel = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.MapPreview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MapScaleTracker)).BeginInit();
             this.SuspendLayout();
@@ -107,11 +108,22 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "MAP SCALE";
             // 
+            // LoadedFileLinkLabel
+            // 
+            this.LoadedFileLinkLabel.AutoSize = true;
+            this.LoadedFileLinkLabel.Location = new System.Drawing.Point(325, 59);
+            this.LoadedFileLinkLabel.Name = "LoadedFileLinkLabel";
+            this.LoadedFileLinkLabel.Size = new System.Drawing.Size(93, 13);
+            this.LoadedFileLinkLabel.TabIndex = 9;
+            this.LoadedFileLinkLabel.TabStop = true;
+            this.LoadedFileLinkLabel.Text = "File Loaded Name";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1648, 747);
+            this.Controls.Add(this.LoadedFileLinkLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.MapScaleTracker);
             this.Controls.Add(this.LoadedFileLabel);
@@ -138,6 +150,7 @@
         private System.Windows.Forms.Label LoadedFileLabel;
         private System.Windows.Forms.TrackBar MapScaleTracker;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.LinkLabel LoadedFileLinkLabel;
     }
 }
 
