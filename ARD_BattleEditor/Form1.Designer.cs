@@ -36,6 +36,7 @@
             this.MapScaleTracker = new System.Windows.Forms.TrackBar();
             this.label1 = new System.Windows.Forms.Label();
             this.LoadedFileLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.MapPreview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MapScaleTracker)).BeginInit();
             this.SuspendLayout();
@@ -118,11 +119,22 @@
             this.LoadedFileLinkLabel.TabStop = true;
             this.LoadedFileLinkLabel.Text = "File Loaded Name";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(328, 12);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            this.checkBox1.TabIndex = 10;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1648, 747);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.LoadedFileLinkLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.MapScaleTracker);
@@ -133,7 +145,7 @@
             this.Controls.Add(this.LoadARD);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
-            this.Text = "ARD -Battle Editor-";
+            this.Text = "Spawn Table Editor";
             ((System.ComponentModel.ISupportInitialize)(this.MapPreview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MapScaleTracker)).EndInit();
             this.ResumeLayout(false);
@@ -151,6 +163,7 @@
         private System.Windows.Forms.TrackBar MapScaleTracker;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel LoadedFileLinkLabel;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
